@@ -1,0 +1,9 @@
+.DS_Store
+/target
+plugin.xml
+*.log
+*.zip
+*.iml
+/web-app
+.idea
+/out
