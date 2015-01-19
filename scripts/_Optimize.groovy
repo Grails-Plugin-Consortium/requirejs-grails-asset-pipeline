@@ -56,11 +56,10 @@ target(optimize: "Optimizes RequireJS") {
     tempBuildJsFile.write("(${jsonElement.toString()})")
 
     // run RequireJS optimizer.
-    def requireJsPluginPath = GrailsPluginUtils.getPluginDirForName('requirejs-grails-asset-pipeline').file.absolutePath
-    def requireOptimizerPath = new File(requireJsPluginPath, 'scripts')
+    def requireOptimizerPath = new File(requirejsGrailsAssetPipelinePluginDir, 'scripts')
     def buildJsPath = tempBuildJsFile.absolutePath
     def str = "java -cp $requireOptimizerPath/js.jar org.mozilla.javascript.tools.shell.Main $requireOptimizerPath/r.js -o $buildJsPath"
-    def proc = str.execute();
+    def proc = str.execute()
     proc.waitFor()
     printMessage "${proc.in.text}"
 

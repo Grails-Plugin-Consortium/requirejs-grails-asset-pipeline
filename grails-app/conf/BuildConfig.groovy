@@ -6,7 +6,6 @@ grails.project.dependency.resolution = {
     log 'warn'
 
     repositories {
-        mavenRepo "http://aftprod00.corp.pgcore.com:8081/artifactory/repo"
         grailsCentral()
         grailsPlugins()
         mavenCentral()
@@ -15,7 +14,8 @@ grails.project.dependency.resolution = {
     plugins {
         runtime ":asset-pipeline:1.9.5"
 
-        build(":release:3.0.1") {
+        build(":release:3.0.1",
+                ":rest-client-builder:2.0.3") {
             export = false
         }
     }
