@@ -1,5 +1,5 @@
 class RequirejsGrailsAssetPipelineGrailsPlugin {
-    def version         = "0.1.10"
+    def version         = "0.1.27"
     def grailsVersion   = "2.0 > *"
     def title           = "RequireJS Asset-Pipeline Plugin"
     def author          = "David Miranda"
