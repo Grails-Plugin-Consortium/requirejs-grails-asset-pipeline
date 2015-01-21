@@ -1,5 +1,7 @@
 RequireJS Grails Asset Pipeline
 ===============================
+![build status](https://travis-ci.org/Grails-Plugin-Consortium/requirejs-grails-asset-pipeline.svg)
+
 The Grails `requirejs-grails-asset-pipeline` is a plugin that provides RequireJS optimizer support for the asset-pipeline static asset management plugin.  It allows you to optimize RequireJS modules that depend on modules defined in Grails plugins.
 
 For more information on how to use asset-pipeline, visit [here](http://www.github.com/bertramdev/asset-pipeline).
